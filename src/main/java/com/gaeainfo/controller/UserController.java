@@ -1,0 +1,13 @@
+package com.gaeainfo.controller;
+
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+    @RequestMapping(value = "testUser")
+    public String testUser() {
+        return "test";
+    }
+}
